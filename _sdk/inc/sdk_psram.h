@@ -39,6 +39,10 @@ extern "C" {
 #define RP2350_PSRAM_CS		47
 #endif
 
+#ifndef GPIO_FUNC_XIP_CS1
+#define GPIO_FUNC_XIP_CS1	9
+#endif
+
 // Max frequency of PSRAM in [Hz] (133 MHz on 3.0V, 109 MHz on 3.3V)
 #ifndef RP2350_PSRAM_MAX_SCK_HZ
 #define RP2350_PSRAM_MAX_SCK_HZ	109000000

@@ -569,7 +569,7 @@
 // === Display
 
 #ifndef DISP_ROT
-#define DISP_ROT	1		// display rotation of LCD: 0 Portrait, 1 Landscape, 2 Inverted Portrait, 3 Inverted Landscape
+#define DISP_ROT	3		// display rotation of LCD: 0 Portrait, 1 Landscape, 2 Inverted Portrait, 3 Inverted Landscape
 #endif
 
 #ifndef WIDTH

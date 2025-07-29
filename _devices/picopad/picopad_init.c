@@ -35,6 +35,8 @@
 #include "picopad_init.h"	// initialize
 #include "picopad_ss.h"		// screen shot
 
+#include "../../_sdk/inc/sdk_gpio.h"
+
 #if USE_DISPHSTX && USE_DISPHSTX_VMODE	// 1=use HSTX Display driver
 
 #if USE_DISPHSTX_DISPBUF	// 1 = use DispBuf + FrameBuf
@@ -119,6 +121,12 @@ void DeviceInit()
 #endif // USE_DISPHSTXMINI
 
 #endif // USE_PICOPADHSTX
+
+	// TODO: touch screen init (only disable the CS line for now)
+	// TOUCH_CS is GPIO 14
+	GPIO_Init(14);
+	GPIO_DirOut(14);
+	GPIO_Out1(14);  
 }
 
 // Device terminate

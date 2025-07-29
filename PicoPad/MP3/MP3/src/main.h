@@ -19,7 +19,7 @@
 // BMP file header (size 70 bytes)
 #if !USE_SCREENSHOT		// use screen shots
 #pragma pack(push,1)
-typedef struct {
+/*typedef struct {
 	// BMP file header (size 14 bytes)
 	u16	bfType;			// 0x00: magic, 'B' 'M' = 0x4D42
 	u32	bfSize;			// 0x02: file size, aligned to DWORD = 70 + 320*240*2 + 2 = 153672 = 0x25848
@@ -44,7 +44,7 @@ typedef struct {
 	u32	biBlueMask;		// 0x3E: blue mask = 0x0000001F
 	u32	biAlphaMask;		// 0x42: alpha mask = 0x00000000
 					// 0x46
-} sBmp;
+} sBmp;*/
 #pragma pack(pop)
 #endif
 

@@ -539,7 +539,7 @@ void DispInit(u8 rot)
 	DispColorMode(COLOR_MODE_65K | COLOR_MODE_16BIT); // set color mode to RGB 16-bit 565
 	WaitMs(50);
 	DispRotation(rot);	// set rotation mode
-	DispInvEnable();	// enable inversion
+	DispInvDisable();	// disable inversion
 	WaitMs(10);
 
 	DispBacklightUpdate();	// update backlight
